@@ -2,8 +2,7 @@ from django.urls import path,include
 from django.contrib import admin
 from exam import views
 from django.contrib.auth.views import LogoutView,LoginView
-from django.views.static import serve
-from django.conf.urls import url
+
 
 urlpatterns = [
 
@@ -67,7 +66,7 @@ urlpatterns = [
     path('view-question/<int:pk>', views.view_question_view,name='view-question'),
     path('delete-question/<int:pk>', views.delete_question_view,name='delete-question'),
     
-    url(r'^static/(?P<path>.*)$', serve,{'document_root': settings.STATIC_ROOT}), 
+   
 
 
 ]
