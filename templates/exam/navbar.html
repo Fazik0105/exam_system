@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+  <style type="text/css">
+    .bs-example {
+      margin: 0px;
+
+    }
+    .bs-example nav {
+        background-color: black;
+    }
+    .navbar-nav a {
+        width: 75px;
+        cursor: pointer;
+        margin-left: 10px;
+        border-radius: 20px;
+    }
+    /* 14 */
+    .btn-14 {
+        position: relative;
+        color: #fff;
+        border: none;
+        z-index: 2;
+    }
+    .btn-14:before,
+    .btn-14:after {
+        position: absolute;
+        content: "";
+        width: 20%;
+        height: 20%;
+        border: 1px solid;
+
+        z-index: -1;
+        transition: all 0.3s ease;
+    }
+    .btn-14:before{
+        top: 0;
+        left: 0;
+        border-bottom-color: transparent;
+        border-right-color: transparent;
+        border-top-color: #fff;
+        border-left-color: #fff;
+    }
+    .btn-14:after{
+        bottom: 0;
+        right: 0;
+        border-top-color: transparent;
+        border-left-color: transparent;
+        border-bottom-color: #fff;
+        border-right-color: #fff;
+    }
+    .btn-14:hover:before,
+    .btn-14:hover:after {
+        border-color: #fff;
+        height: 100%;
+        width: 100%;
+        box-shadow: 0 0 5px #fff, 0 0 5px #fff inset;
+    }
+  </style>
+</head>
+
+<body>
+
+
+
+  <div class="bs-example">
+    <nav class="navbar navbar-expand-md">
+    <a style="color: #fff; text-decoration: none; href="/"><font face = "verdana" size =" 5"><img src="{% static "image/logo.png" %}" style="width: 80px; height: 70px;" alt=""><img src="{% static "image/download (1).gif" %}" style="width: 250px; height: 70px; border-radius: 40px" alt=""></font><br /></a>
+      <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+        <div class="navbar-nav">
+    
+        </div>
+
+        <div class="navbar-nav">
+          <a href="/" class="nav-item nav-link btn-14"> Home</a>
+          <a href="/teacher/teacherclick" class="nav-item nav-link btn-14">Teacher</a>
+          <a href="/student/studentclick" class="nav-item nav-link btn-14">Student</a>
+          <a href="/adminclick" class="nav-item nav-link btn-14">Admin</a>
+          
+        </div>
+
+
+
+
+      </div>
+    </nav>
+  </div>
+
+
+</body>
+
+</html>
