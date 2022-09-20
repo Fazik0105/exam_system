@@ -6,7 +6,7 @@ anyio==3.6.1
 APScheduler==3.6.3
 argon2-cffi==21.3.0
 argon2-cffi-bindings==21.2.0
-asgiref==3.2.7
+asgiref==3.5.2
 astroid==2.5.2
 async-timeout==4.0.2
 atomicwrites==1.4.0
@@ -23,8 +23,10 @@ crispy-bootstrap5==0.6
 cryptography==37.0.2
 dataclass-factory==2.15
 distlib==0.3.5
-Django==3.0.5
+dj-database-url==1.0.0
+Django==4.1.1
 django-crispy-forms==1.14.0
+django-heroku==0.3.1
 django-session-timeout==0.1.0
 django-widget-tweaks==1.4.8
 filelock==3.7.1
@@ -56,6 +58,7 @@ Pillow==8.1.1
 pipenv==2022.8.19
 platformdirs==2.5.2
 pluggy==1.0.0
+psycopg2==2.9.3
 py==1.11.0
 pyasn1==0.4.8
 pyasn1-modules==0.2.8
