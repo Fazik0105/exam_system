@@ -1,2 +1,1 @@
-release: python manage.py migrate
-web: gunicorn resultexam.wsgi --log-file=-
+web: gunicorn resultexam.wsgi --log-file -
